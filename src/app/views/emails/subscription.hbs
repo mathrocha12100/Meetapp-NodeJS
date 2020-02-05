@@ -1,0 +1,90 @@
+
+
+<div class="box">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+    * {
+      color: #FFF;
+      font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    }
+div.box {
+    height: 450px;
+    max-width: 600px;
+    background-image: linear-gradient(#22202C, #402845);
+}
+
+div.box header {
+    height: 60px;
+    background: #16131E;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+div.box header h2 {
+    font-family: sans-serif;
+    color: #F94D6A;
+    font-size: 36px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+div.box header h3 {
+    font-family: ubuntu;
+    color: #FFF;
+}
+
+div.box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.box .content .box2 {
+    width: 560px;
+    height: 154px;
+    background-color: #2A1D31;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.box .content .box2 .change {
+    display: flex;
+    flex-direction: column;
+}
+
+
+div.box .content .box2 .change h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 12px;
+}
+
+div.box .content .box2 img {
+    width: 188px;
+    height: 128px;
+    background: #19111C;
+    border-radius: 5px;
+}
+  </style>
+          <header>
+              <h2>M</h2>
+              <h3>Equipe Meetapp</h3>
+          </header>
+          <div class="content">
+              <h2>Novo usuario inscrito!</h2>
+              <p style="padding-bottom: 10px;">O usuario {{ user }} se inscreveu
+                no seu Meetup!</p>
+                <div class="box2">
+                    <div class="change">
+                        <h2>Meetup: {{ meetup }}</h2>
+                        <h2>Data: {{ date }}</h2>
+                        <h2>Local: {{ localization }}</h2>
+                    </div>
+                    <img src="{{ image }}" alt="">
+                </div>
+                <p style="padding-top: 30px;">Atenciosamente Equipe Meetapp</p>
+                <p>noreply@meetapp.com</p>
+        </div>
+</div>
